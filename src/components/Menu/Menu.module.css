@@ -1,0 +1,24 @@
+.menu{
+  grid-area: m;
+  background-color: burlywood;
+}
+
+.list{
+  padding: 10px;
+}
+
+.item{
+  transition: all .3s;
+  cursor: pointer;
+}
+.item:hover,
+.item:focus{
+  background-color: #6e4b4b;
+}
+
+.link{
+  max-width: 100%;
+  padding: 6px 0 6px 20px ;
+  color: #fff;
+  font-weight: 500;
+}
