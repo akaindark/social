@@ -1,16 +1,12 @@
 import React from 'react';
 import classes from './Profile.module.scss';
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 export default function Profile() {
   return (
     <main className={classes.content}>
-      <img className={classes.image}
-           src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
-           alt=""/>
-      <div>
-        ava + Description
-      </div>
+      <ProfileInfo />
       <MyPosts />
     </main>
   );
