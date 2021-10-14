@@ -3,11 +3,12 @@ import classes from './Profile.module.scss';
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-export default function Profile() {
+export default function Profile(props) {
+
   return (
     <main className={classes.content}>
       <ProfileInfo />
-      <MyPosts />
+      <MyPosts posts={props.state.posts}/>
     </main>
   );
 }
